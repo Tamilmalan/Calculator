@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Conversion</title>
+    <link rel="stylesheet" href="wc.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Weight Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="g">Grams (g)</option>
+                <option value="microgram">Micrograms (µg)</option>
+                <option value="q">Quintals (q)</option>
+                <option value="ct">Carats (ct)</option>
+                <option value="t">Tons (t)</option>
+                <option value="mg">Milligrams (mg)</option>
+                <option value="kg">Kilograms (kg)</option>
+            </select>
+            <input type="number" id="weightInput" placeholder="Enter weight">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="g">Grams (g)</option>
+                <option value="microgram">Micrograms (µg)</option>
+                <option value="q">Quintals (q)</option>
+                <option value="ct">Carats (ct)</option>
+                <option value="t">Tons (t)</option>
+                <option value="mg">Milligrams (mg)</option>
+                <option value="kg">Kilograms (kg)</option>
+            </select>
+            <input type="text" id="convertedWeight" readonly>
+        </div>
+        <button onclick="convertWeight()">Convert</button>
+    </div>
+    <script src="wc.html"></script>
+</body>
+</html>

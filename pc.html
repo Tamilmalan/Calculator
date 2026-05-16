@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure Conversion</title>
+    <link rel="stylesheet" href="pc.css">
+</head>
+<body>
+    
+    <div class="conversion-page">
+        <h1>Pressure Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="mmh2o">Millimeters of Water (mmH2O)</option>
+                <option value="psf">Pounds per Square Foot (psf)</option>
+                <option value="kgfcm2">Kilogram-force per Square Centimeter (kgf/cm²)</option>
+                <option value="psi">Pounds per Square Inch (psi)</option>
+                <option value="mmhg">Millimeters of Mercury (mmHg)</option>
+                <option value="bar">Bar (bar)</option>
+                <option value="inhg">Inches of Mercury (inHg)</option>
+                <option value="mbar">Millibar (mbar)</option>
+                <option value="hpa">Hectopascal (hPa)</option>
+                <option value="atm">Standard Atmosphere (atm)</option>
+                <option value="kpa">Kilopascal (kPa)</option>
+                <option value="mpa">Megapascal (MPa)</option>
+                <option value="kgfm2">Kilogram-force per Square Meter (kgf/m²)</option>
+            </select>
+            <input type="number" id="pressureInput" placeholder="Enter pressure">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="mmh2o">Millimeters of Water (mmH2O)</option>
+                <option value="psf">Pounds per Square Foot (psf)</option>
+                <option value="kgfcm2">Kilogram-force per Square Centimeter (kgf/cm²)</option>
+                <option value="psi">Pounds per Square Inch (psi)</option>
+                <option value="mmhg">Millimeters of Mercury (mmHg)</option>
+                <option value="bar">Bar (bar)</option>
+                <option value="inhg">Inches of Mercury (inHg)</option>
+                <option value="mbar">Millibar (mbar)</option>
+                <option value="hpa">Hectopascal (hPa)</option>
+                <option value="atm">Standard Atmosphere (atm)</option>
+                <option value="kpa">Kilopascal (kPa)</option>
+                <option value="mpa">Megapascal (MPa)</option>
+                <option value="kgfm2">Kilogram-force per Square Meter (kgf/m²)</option>
+            </select>
+            <input type="text" id="convertedPressure" readonly>
+        </div>
+        <button onclick="convertPressure()">Convert</button>
+    </div>
+    <script src="pc.js"></script>
+</body>
+</html>

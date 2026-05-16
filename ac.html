@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Conversion</title>
+    <link rel="stylesheet" href="ac.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Area Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="m2">Square Meters (m²)</option>
+                <option value="dm2">Square Decimeters (dm²)</option>
+                <option value="cm2">Square Centimeters (cm²)</option>
+                <option value="km2">Square Kilometers (km²)</option>
+                <option value="mm2">Square Millimeters (mm²)</option>
+                <option value="ar">Are (a)</option>
+                <option value="ha">Hectare (ha)</option>
+            </select>
+            <input type="number" id="areaInput" placeholder="Enter area">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="m2">Square Meters (m²)</option>
+                <option value="dm2">Square Decimeters (dm²)</option>
+                <option value="cm2">Square Centimeters (cm²)</option>
+                <option value="km2">Square Kilometers (km²)</option>
+                <option value="mm2">Square Millimeters (mm²)</option>
+                <option value="ar">Are (a)</option>
+                <option value="ha">Hectare (ha)</option>
+            </select>
+            <input type="text" id="convertedArea" readonly>
+        </div>
+        <button onclick="convertArea()">Convert</button>
+    </div>
+    <script src="ac.js"></script>
+</body>
+</html>

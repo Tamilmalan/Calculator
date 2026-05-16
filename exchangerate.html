@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Calculator</a></li>
+                <li><a href="exchangerate.html">Exchange Rate</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="exchange-rate">
+        <h1>Exchange Rate Calculator</h1>
+        <div>
+            <label for="fromCurrency">From:</label>
+            <select id="fromCurrency">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div>
+            <label for="toCurrency">To:</label>
+            <select id="toCurrency">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <input type="text" id="convertedAmount" readonly>
+        </div>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

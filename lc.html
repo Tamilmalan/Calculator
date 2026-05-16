@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Conversion</title>
+    <link rel="stylesheet" href="lc.css">
+</head>
+<body>
+    
+    <div class="conversion-page">
+        <h1>Length Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="m">Meters (m)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="in">Inches (in)</option>
+                <option value="dm">Decimeters (dm)</option>
+                <option value="ly">Light-years (ly)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="micrometer">Micrometers (μm)</option>
+                <option value="pc">Parsecs (pc)</option>
+                <option value="au">Astronomical Units (AU)</option>
+                <option value="ld">Lunar Distance (ld)</option>
+                <option value="pm">Picometers (pm)</option>
+                <option value="nm">Nanometers (nm)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="mi">Miles (mi)</option>
+            </select>
+            <input type="number" id="lengthInput" placeholder="Enter length">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="m">Meters (m)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="in">Inches (in)</option>
+                <option value="dm">Decimeters (dm)</option>
+                <option value="ly">Light-years (ly)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="micrometer">Micrometers (μm)</option>
+                <option value="pc">Parsecs (pc)</option>
+                <option value="au">Astronomical Units (AU)</option>
+                <option value="ld">Lunar Distance (ld)</option>
+                <option value="pm">Picometers (pm)</option>
+                <option value="nm">Nanometers (nm)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="mi">Miles (mi)</option>
+            </select>
+            <input type="text" id="convertedLength" readonly>
+        </div>
+        <button onclick="convertLength()">Convert</button>
+    </div>
+    <script src="lc.js"></script>
+</body>
+</html>

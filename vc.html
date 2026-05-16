@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Conversion</title>
+    <link rel="stylesheet" href="tc.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Volume Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="hl">Hectoliters (hl)</option>
+                <option value="m3">Cubic Meters (m³)</option>
+                <option value="cm3">Cubic Centimeters (cm³)</option>
+                <option value="dl">Deciliters (dl)</option>
+                <option value="cl">Centiliters (cl)</option>
+                <option value="dm3">Cubic Decimeters (dm³)</option>
+                <option value="l">Liters (l)</option>
+                <option value="mm3">Cubic Millimeters (mm³)</option>
+                <option value="ml">Milliliters (ml)</option>
+            </select>
+            <input type="number" id="volumeInput" placeholder="Enter volume">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="hl">Hectoliters (hl)</option>
+                <option value="m3">Cubic Meters (m³)</option>
+                <option value="cm3">Cubic Centimeters (cm³)</option>
+                <option value="dl">Deciliters (dl)</option>
+                <option value="cl">Centiliters (cl)</option>
+                <option value="dm3">Cubic Decimeters (dm³)</option>
+                <option value="l">Liters (l)</option>
+                <option value="mm3">Cubic Millimeters (mm³)</option>
+                <option value="ml">Milliliters (ml)</option>
+            </select>
+            <input type="text" id="convertedVolume" readonly>
+        </div>
+        <button onclick="convertVolume()">Convert</button>
+    </div>
+    <script src="vc.js"></script>
+</body>
+</html>

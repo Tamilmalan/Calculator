@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Conversion</title>
+    <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Power Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="w">Watts (W)</option>
+                <option value="kw">Kilowatts (kW)</option>
+                <option value="mw">Megawatts (MW)</option>
+                <option value="hp">Horsepower (HP)</option>
+                <option value="dbm">dBm</option>
+                <option value="cal/s">Calories per Second (cal/s)</option>
+                <option value="ft-lb/s">Foot-Pounds per Second (ft-lb/s)</option>
+                <option value="btu/s">British Thermal Units per Second (BTU/s)</option>
+            </select>
+            <input type="number" id="powerInput" placeholder="Enter power">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="w">Watts (W)</option>
+                <option value="kw">Kilowatts (kW)</option>
+                <option value="mw">Megawatts (MW)</option>
+                <option value="hp">Horsepower (HP)</option>
+                <option value="dbm">dBm</option>
+                <option value="cal/s">Calories per Second (cal/s)</option>
+                <option value="ft-lb/s">Foot-Pounds per Second (ft-lb/s)</option>
+                <option value="btu/s">British Thermal Units per Second (BTU/s)</option>
+            </select>
+            <input type="text" id="convertedPower" readonly>
+        </div>
+        <button onclick="convertPower()">Convert</button>
+    </div>
+    <script src="pr.js"></script>
+</body>
+</html>

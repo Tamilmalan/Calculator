@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Conversion</title>
+    <link rel="stylesheet" href="sc.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Speed Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="c">Speed of Light (c)</option>
+                <option value="km/s">Kilometers per second (km/s)</option>
+                <option value="mph">Miles per hour (mph)</option>
+                <option value="ma">Mach (ma)</option>
+                <option value="in/s">Inches per second (in/s)</option>
+                <option value="m/s">Meters per second (m/s)</option>
+                <option value="km/h">Kilometers per hour (km/h)</option>
+            </select>
+            <input type="number" id="speedInput" placeholder="Enter speed">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="c">Speed of Light (c)</option>
+                <option value="km/s">Kilometers per second (km/s)</option>
+                <option value="mph">Miles per hour (mph)</option>
+                <option value="ma">Mach (ma)</option>
+                <option value="in/s">Inches per second (in/s)</option>
+                <option value="m/s">Meters per second (m/s)</option>
+                <option value="km/h">Kilometers per hour (km/h)</option>
+            </select>
+            <input type="text" id="convertedSpeed" readonly>
+        </div>
+        <button onclick="convertSpeed()">Convert</button>
+    </div>
+    <script src="sc.js"></script>
+</body>
+</html>

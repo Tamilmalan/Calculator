@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="tc.css">
+</head>
+<body>
+    <div class="conversion-page">
+        <h1>Temperature Conversion</h1>
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="C">Celsius (C)</option>
+                <option value="F">Fahrenheit (F)</option>
+                <option value="K">Kelvin (K)</option>
+                <option value="R">Rankine (R)</option>
+                <option value="Re">Réaumur (Re)</option>
+            </select>
+            <input type="number" id="temperatureInput" placeholder="Enter temperature">
+        </div>
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="C">Celsius (C)</option>
+                <option value="F">Fahrenheit (F)</option>
+                <option value="K">Kelvin (K)</option>
+                <option value="R">Rankine (R)</option>
+                <option value="Re">Réaumur (Re)</option>
+            </select>
+            <input type="text" id="convertedTemperature" readonly>
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+    </div>
+    <script src="tc.js"></script>
+</body>
+</html>
